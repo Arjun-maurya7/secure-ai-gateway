@@ -1,0 +1,55 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# IDE & Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# Temporary & Log files
+*.log
+*.tmp
+*.temp
+tempCodeRunnerFile.py
+**/tempCodeRunnerFile.py
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Archives / Compressed files
+*.zip
+*.tar.gz
+
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
