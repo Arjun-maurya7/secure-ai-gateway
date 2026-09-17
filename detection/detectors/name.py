@@ -11,6 +11,15 @@ NAME_PATTERN = re.compile(
 
 class NameDetector(BaseDetector):
 
+    def calculate_confidence(self, name: str, text: str, start: int, end: int) -> float:
+        score = 0.85
+
+        words = name.split()
+        if len(words) >= 2:
+            score += 0.05
+
+        return min(round(score, 2), 0.99)
+
     def detect(self, text: str) -> list[Entity]:
         entities = []
 
@@ -19,6 +28,7 @@ class NameDetector(BaseDetector):
 
             start = match.start(1)
             end = match.end(1)
+            confidence = self.calculate_confidence(name, text, start, end)
 
             entities.append(
                 Entity(
@@ -26,7 +36,7 @@ class NameDetector(BaseDetector):
                     value=name,
                     start=start,
                     end=end,
-                    confidence=0.90
+                    confidence=confidence,
                 )
             )
 

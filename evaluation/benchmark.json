@@ -1,0 +1,449 @@
+[
+  {
+    "text": "Contact Rahul at rahul@gmail.com or 9876543210.",
+    "entities": [
+      {
+        "type": "NAME",
+        "value": "Rahul"
+      },
+      {
+        "type": "EMAIL",
+        "value": "rahul@gmail.com"
+      },
+      {
+        "type": "PHONE",
+        "value": "9876543210"
+      }
+    ]
+  },
+  {
+    "text": "PAN number is IKRPM7731M.",
+    "entities": [
+      {
+        "type": "PAN",
+        "value": "IKRPM7731M"
+      }
+    ]
+  },
+  {
+    "text": "Card number is 4532015112830366.",
+    "entities": [
+      {
+        "type": "CARD",
+        "value": "4532015112830366"
+      }
+    ]
+  },
+  {
+    "text": "Account number: 123456789012.",
+    "entities": [
+      {
+        "type": "ACCOUNT",
+        "value": "123456789012"
+      }
+    ]
+  },
+  {
+    "text": "Server IP is 192.168.1.10.",
+    "entities": [
+      {
+        "type": "IP",
+        "value": "192.168.1.10"
+      }
+    ]
+  },
+  {
+    "text": "Visit https://bank.com/account for details.",
+    "entities": [
+      {
+        "type": "URL",
+        "value": "https://bank.com/account"
+      }
+    ]
+  },
+  {
+    "text": "API key: sk-proj-1234567890abcdef1234567890",
+    "entities": [
+      {
+        "type": "API_KEY",
+        "value": "sk-proj-1234567890abcdef1234567890"
+      }
+    ]
+  },
+  {
+    "text": "Authorization token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+    "entities": [
+      {
+        "type": "JWT",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      }
+    ]
+  },
+  {
+    "text": "The bank is open from 9 AM to 5 PM. Please visit our branch.",
+    "entities": []
+  },
+  {
+    "text": "Email support@example.com for assistance.",
+    "entities": [
+      {
+        "type": "EMAIL",
+        "value": "support@example.com"
+      }
+    ]
+  },
+  {
+    "text": "Customer email: customer123@bank.com",
+    "entities": [
+      {
+        "type": "EMAIL",
+        "value": "customer123@bank.com"
+      }
+    ]
+  },
+  {
+    "text": "Forward to admin@hdfc.co.in and cc compliance@rbi.org.in.",
+    "entities": [
+      {
+        "type": "EMAIL",
+        "value": "admin@hdfc.co.in"
+      },
+      {
+        "type": "EMAIL",
+        "value": "compliance@rbi.org.in"
+      }
+    ]
+  },
+  {
+    "text": "Call 9876543210 or 8765432109 immediately.",
+    "entities": [
+      {
+        "type": "PHONE",
+        "value": "9876543210"
+      },
+      {
+        "type": "PHONE",
+        "value": "8765432109"
+      }
+    ]
+  },
+  {
+    "text": "Mobile: 9123456780. WhatsApp: 9988776655.",
+    "entities": [
+      {
+        "type": "PHONE",
+        "value": "9123456780"
+      },
+      {
+        "type": "PHONE",
+        "value": "9988776655"
+      }
+    ]
+  },
+  {
+    "text": "My pan no. is ABCPD1234E.",
+    "entities": [
+      {
+        "type": "PAN",
+        "value": "ABCPD1234E"
+      }
+    ]
+  },
+  {
+    "text": "TDS was deducted from PAN DEJPA5678F and BCFPJ9012A.",
+    "entities": [
+      {
+        "type": "PAN",
+        "value": "DEJPA5678F"
+      },
+      {
+        "type": "PAN",
+        "value": "BCFPJ9012A"
+      }
+    ]
+  },
+  {
+    "text": "Candidate ABCDE1234F looks like a PAN but the 4th character is not valid.",
+    "entities": []
+  },
+  {
+    "text": "My card is 4111-1111-1111-1111.",
+    "entities": [
+      {
+        "type": "CARD",
+        "value": "4111-1111-1111-1111"
+      }
+    ]
+  },
+  {
+    "text": "Spaced card: 5555 5555 5555 4444.",
+    "entities": [
+      {
+        "type": "CARD",
+        "value": "5555 5555 5555 4444"
+      }
+    ]
+  },
+  {
+    "text": "Invalid card candidate: 4111111111111112.",
+    "entities": []
+  },
+  {
+    "text": "Please transfer funds to a/c 987654321098.",
+    "entities": [
+      {
+        "type": "ACCOUNT",
+        "value": "987654321098"
+      }
+    ]
+  },
+  {
+    "text": "Bank account: 1234-5678-9012 is registered.",
+    "entities": [
+      {
+        "type": "ACCOUNT",
+        "value": "1234-5678-9012"
+      }
+    ]
+  },
+  {
+    "text": "Tracking reference 123456789012 was assigned to the package.",
+    "entities": []
+  },
+  {
+    "text": "Connected to gateway at 10.0.0.1 on the network.",
+    "entities": [
+      {
+        "type": "IP",
+        "value": "10.0.0.1"
+      }
+    ]
+  },
+  {
+    "text": "DNS primary: 8.8.8.8 and backup DNS: 8.8.4.4.",
+    "entities": [
+      {
+        "type": "IP",
+        "value": "8.8.8.8"
+      },
+      {
+        "type": "IP",
+        "value": "8.8.4.4"
+      }
+    ]
+  },
+  {
+    "text": "Invalid IP candidate: 999.999.999.999.",
+    "entities": []
+  },
+  {
+    "text": "Portal: https://secure.hdfc.co.in/netbanking and http://localhost:8080/health.",
+    "entities": [
+      {
+        "type": "URL",
+        "value": "https://secure.hdfc.co.in/netbanking"
+      },
+      {
+        "type": "URL",
+        "value": "http://localhost:8080/health"
+      }
+    ]
+  },
+  {
+    "text": "API endpoint: https://api.bank.com/v1/scan?tenant=demo.",
+    "entities": [
+      {
+        "type": "URL",
+        "value": "https://api.bank.com/v1/scan?tenant=demo"
+      }
+    ]
+  },
+  {
+    "text": "The report version is 2.0 with patch 3.1.",
+    "entities": []
+  },
+  {
+    "text": "GitHub token: ghp_1234567890abcdefghijklmnopqrstuvwxyz",
+    "entities": [
+      {
+        "type": "API_KEY",
+        "value": "ghp_1234567890abcdefghijklmnopqrstuvwxyz"
+      }
+    ]
+  },
+  {
+    "text": "AWS key: AKIAIOSFODNN7EXAMPLE",
+    "entities": [
+      {
+        "type": "API_KEY",
+        "value": "AKIAIOSFODNN7EXAMPLE"
+      }
+    ]
+  },
+  {
+    "text": "Set api_key = 'abcdef1234567890abcdef1234567890' in the config.",
+    "entities": [
+      {
+        "type": "API_KEY",
+        "value": "abcdef1234567890abcdef1234567890"
+      }
+    ]
+  },
+  {
+    "text": "Malformed token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIn0 is incomplete.",
+    "entities": []
+  },
+  {
+    "text": "Customer name: Priya has completed the KYC process.",
+    "entities": [
+      {
+        "type": "NAME",
+        "value": "Priya"
+      }
+    ]
+  },
+  {
+    "text": "Mr. Amit visited the branch for a loan query.",
+    "entities": [
+      {
+        "type": "NAME",
+        "value": "Amit"
+      }
+    ]
+  },
+  {
+    "text": "Rahul Sharma works at the bank.",
+    "entities": [
+      {
+        "type": "NAME",
+        "value": "Rahul Sharma"
+      }
+    ]
+  },
+  {
+    "text": "Monday is a working day.",
+    "entities": []
+  },
+  {
+    "text": "General banking policies are available online.",
+    "entities": []
+  },
+  {
+    "text": "Customer Rahul Sharma (email: rahul@gmail.com, phone: 9876543210) has PAN IKRPM7731M and card 4111-1111-1111-1111.",
+    "entities": [
+      {
+        "type": "NAME",
+        "value": "Customer Rahul Sharma"
+      },
+      {
+        "type": "EMAIL",
+        "value": "rahul@gmail.com"
+      },
+      {
+        "type": "PHONE",
+        "value": "9876543210"
+      },
+      {
+        "type": "PAN",
+        "value": "IKRPM7731M"
+      },
+      {
+        "type": "CARD",
+        "value": "4111-1111-1111-1111"
+      }
+    ]
+  },
+  {
+    "text": "Account 123456789012 belongs to Priya. Reach her at priya@bank.in.",
+    "entities": [
+      {
+        "type": "ACCOUNT",
+        "value": "123456789012"
+      },
+      {
+        "type": "EMAIL",
+        "value": "priya@bank.in"
+      }
+    ]
+  },
+  {
+    "text": "Server at 192.168.1.50 hosts portal https://secure.bank.com used by user Amit.",
+    "entities": [
+      {
+        "type": "IP",
+        "value": "192.168.1.50"
+      },
+      {
+        "type": "URL",
+        "value": "https://secure.bank.com"
+      },
+      {
+        "type": "NAME",
+        "value": "Amit"
+      }
+    ]
+  },
+  {
+    "text": "The system processed the transaction successfully.",
+    "entities": []
+  },
+  {
+    "text": "Please contact the branch for more details.",
+    "entities": []
+  },
+  {
+    "text": "Use reference code 12345 for your query.",
+    "entities": []
+  },
+  {
+    "text": "My phone number is 9876543210.",
+    "entities": [
+      {
+        "type": "PHONE",
+        "value": "9876543210"
+      }
+    ]
+  },
+  {
+    "text": "Contact Rahul at support@example.com for banking help.",
+    "entities": [
+      {
+        "type": "NAME",
+        "value": "Rahul"
+      },
+      {
+        "type": "EMAIL",
+        "value": "support@example.com"
+      }
+    ]
+  },
+  {
+    "text": "The commit hash is e3b0c44298fc1c149afbf4c8996fb924.",
+    "entities": []
+  },
+  {
+    "text": "Account details are available on the portal.",
+    "entities": []
+  },
+  {
+    "text": "User Priya accessed the portal at https://app.bank.com using phone 9812345670 and email priya@example.com.",
+    "entities": [
+      {
+        "type": "NAME",
+        "value": "Priya"
+      },
+      {
+        "type": "URL",
+        "value": "https://app.bank.com"
+      },
+      {
+        "type": "PHONE",
+        "value": "9812345670"
+      },
+      {
+        "type": "EMAIL",
+        "value": "priya@example.com"
+      }
+    ]
+  }
+]

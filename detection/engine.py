@@ -3,6 +3,12 @@ from detection.detectors.phone import PhoneDetector
 from detection.detectors.pan import PANDetector
 from detection.detectors.ner import NERDetector
 from detection.detectors.card import CardDetector
+from detection.detectors.account import AccountDetector
+from detection.detectors.ip import IPDetector
+from detection.detectors.url import URLDetector
+from detection.detectors.api_key import APIKeyDetector
+from detection.detectors.jwt import JWTDetector
+
 
 class DetectionEngine:
 
@@ -12,9 +18,14 @@ class DetectionEngine:
             PhoneDetector(),
             PANDetector(),
             NERDetector(),
-            CardDetector()
+            CardDetector(),
+            AccountDetector(),
+            IPDetector(),
+            URLDetector(),
+            APIKeyDetector(),
+            JWTDetector(),
         ]
-        
+
     def detect(self, text: str):
         entities = []
 
