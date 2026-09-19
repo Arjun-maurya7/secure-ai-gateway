@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure AI Gateway</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo-box">
+      <div class="logo-icon">🛡️</div>
+      <div>
+        <h1>Secure AI Gateway</h1>
+        <p class="subtitle">AI Prompt DLP & Governance</p>
+      </div>
+    </div>
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="guardToggle" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <div class="status-card" id="statusCard">
+    <div class="status-indicator online" id="statusDot"></div>
+    <div class="status-text">
+      <span class="status-title" id="statusTitle">Gateway Protected</span>
+      <span class="status-desc" id="statusDesc">Monitoring ChatGPT, Gemini, Claude...</span>
+    </div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-box">
+      <span class="stat-number" id="statTotal">0</span>
+      <span class="stat-label">Total Scans</span>
+    </div>
+    <div class="stat-box stat-blocked">
+      <span class="stat-number" id="statBlocked">0</span>
+      <span class="stat-label">Blocked</span>
+    </div>
+    <div class="stat-box stat-allowed">
+      <span class="stat-number" id="statAllowed">0</span>
+      <span class="stat-label">Allowed</span>
+    </div>
+  </div>
+
+  <div class="section-title">
+    <span>Recent DLP Activity</span>
+    <button class="clear-btn" id="refreshBtn">↻ Refresh</button>
+  </div>
+  <div class="logs-container" id="logsContainer">
+    <div class="empty-state">No scans recorded yet. Try typing a prompt on ChatGPT or Gemini!</div>
+  </div>
+
+  <div class="section-title">Backend Configuration</div>
+  <div class="config-section">
+    <input type="text" id="backendUrlInput" value="http://localhost:8000/v1/scan" placeholder="http://localhost:8000/v1/scan">
+    <button id="saveConfigBtn">Save</button>
+  </div>
+
+  <div class="footer">
+    <span>Version 1.0.0</span> • <span>Connected to FastAPI Engine</span>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
