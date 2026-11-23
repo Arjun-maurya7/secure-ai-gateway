@@ -1,6 +1,5 @@
 from schemas.policy import PolicyAction
 
-
 DEFAULT_POLICIES = {
     "EMAIL": PolicyAction.REDACT,
     "PHONE": PolicyAction.REDACT,

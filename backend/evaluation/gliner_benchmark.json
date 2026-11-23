@@ -1,0 +1,267 @@
+[
+  {
+    "id": "gliner_001",
+    "category": "clear_positive",
+    "note": "Full name clearly embedded in banking context",
+    "text": "Dear Rahul Sharma, your savings account statement is ready for download.",
+    "entities": [
+      { "text": "Rahul Sharma", "label": "NAME" }
+    ]
+  },
+  {
+    "id": "gliner_002",
+    "category": "clear_positive",
+    "note": "Standard Indian mobile number with explicit label context",
+    "text": "Please call our customer at +91 9876543210 to confirm the transaction.",
+    "entities": [
+      { "text": "+91 9876543210", "label": "PHONE" }
+    ]
+  },
+  {
+    "id": "gliner_003",
+    "category": "clear_positive",
+    "note": "Corporate email in a KYC update notification",
+    "text": "Send the KYC documents to rahul.sharma@hdfc.co.in before Friday.",
+    "entities": [
+      { "text": "rahul.sharma@hdfc.co.in", "label": "EMAIL" }
+    ]
+  },
+  {
+    "id": "gliner_004",
+    "category": "clear_positive",
+    "note": "Valid Indian PAN card number in a tax context",
+    "text": "TDS will be deducted against PAN ABCDE1234F as per IT guidelines.",
+    "entities": [
+      { "text": "ABCDE1234F", "label": "PAN" }
+    ]
+  },
+  {
+    "id": "gliner_005",
+    "category": "clear_positive",
+    "note": "Luhn-valid Visa card number in a fraud alert",
+    "text": "Suspicious charge detected on card number 4111111111111111.",
+    "entities": [
+      { "text": "4111111111111111", "label": "CREDIT CARD" }
+    ]
+  },
+  {
+    "id": "gliner_006",
+    "category": "clear_positive",
+    "note": "Bank account number in a fund transfer instruction",
+    "text": "Please transfer Rs. 50,000 to account number 123456789012 at SBI.",
+    "entities": [
+      { "text": "123456789012", "label": "BANK ACCOUNT NUMBER" }
+    ]
+  },
+  {
+    "id": "gliner_007",
+    "category": "clear_positive",
+    "note": "Private internal IP address in a security incident report",
+    "text": "The brute-force attempt originated from IP address 192.168.1.105.",
+    "entities": [
+      { "text": "192.168.1.105", "label": "IP ADDRESS" }
+    ]
+  },
+  {
+    "id": "gliner_008",
+    "category": "clear_positive",
+    "note": "HTTPS banking portal URL in an audit log",
+    "text": "User session initiated at https://netbanking.sbi.co.in/retail/.",
+    "entities": [
+      { "text": "https://netbanking.sbi.co.in/retail/", "label": "URL" }
+    ]
+  },
+  {
+    "id": "gliner_009",
+    "category": "clear_positive",
+    "note": "OpenAI API key with sk-proj prefix in a config leak scenario",
+    "text": "The developer accidentally committed API key sk-proj-1234567890abcdef1234567890 to the public repository.",
+    "entities": [
+      { "text": "sk-proj-1234567890abcdef1234567890", "label": "API KEY" }
+    ]
+  },
+  {
+    "id": "gliner_010",
+    "category": "clear_positive",
+    "note": "Valid three-part JWT token in an authorization header context",
+    "text": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+    "entities": [
+      { "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c", "label": "JWT" }
+    ]
+  },
+  {
+    "id": "gliner_011",
+    "category": "contextual",
+    "note": "First name only — context ('customer name') disambiguates it as a person",
+    "text": "Customer name: Priya has submitted a home loan application.",
+    "entities": [
+      { "text": "Priya", "label": "NAME" }
+    ]
+  },
+  {
+    "id": "gliner_012",
+    "category": "contextual",
+    "note": "10-digit number — context ('mobile') confirms it is a phone number, not an account",
+    "text": "Registered mobile for OTP: 9988776655.",
+    "entities": [
+      { "text": "9988776655", "label": "PHONE" }
+    ]
+  },
+  {
+    "id": "gliner_013",
+    "category": "contextual",
+    "note": "12-digit number — context ('account') confirms it is a bank account, not a shipment ID",
+    "text": "Debit authorised from account 987654321098 for EMI payment.",
+    "entities": [
+      { "text": "987654321098", "label": "BANK ACCOUNT NUMBER" }
+    ]
+  },
+  {
+    "id": "gliner_014",
+    "category": "contextual",
+    "note": "Multiple PII types in a single loan approval message",
+    "text": "Loan approved for Amit Verma (PAN: BCFPJ9012A) — disbursement to account 456789012345, notification sent to amit.verma@gmail.com.",
+    "entities": [
+      { "text": "Amit Verma", "label": "NAME" },
+      { "text": "BCFPJ9012A", "label": "PAN" },
+      { "text": "456789012345", "label": "BANK ACCOUNT NUMBER" },
+      { "text": "amit.verma@gmail.com", "label": "EMAIL" }
+    ]
+  },
+  {
+    "id": "gliner_015",
+    "category": "contextual",
+    "note": "IP + URL coexist in a server access log — both are PII in a security context",
+    "text": "Access from 10.0.0.42 to https://admin.bank.com/dashboard was denied.",
+    "entities": [
+      { "text": "10.0.0.42", "label": "IP ADDRESS" },
+      { "text": "https://admin.bank.com/dashboard", "label": "URL" }
+    ]
+  },
+  {
+    "id": "gliner_016",
+    "category": "contextual",
+    "note": "GitHub PAT in a security audit — context 'leaked token' clarifies it is a credential",
+    "text": "Security audit found a leaked token: ghp_1234567890abcdefghijklmnopqrstuvwxyz in the CI pipeline logs.",
+    "entities": [
+      { "text": "ghp_1234567890abcdefghijklmnopqrstuvwxyz", "label": "API KEY" }
+    ]
+  },
+  {
+    "id": "gliner_017",
+    "category": "ambiguous",
+    "note": "First name only with no surrounding context — borderline PERSON detection",
+    "text": "Rahul will be handling your case.",
+    "entities": [
+      { "text": "Rahul", "label": "NAME" }
+    ]
+  },
+  {
+    "id": "gliner_018",
+    "category": "ambiguous",
+    "note": "10-digit number with no surrounding context — could be phone or account; expected as PHONE based on digit pattern",
+    "text": "The reference number for your complaint is 9876543210.",
+    "entities": [
+      { "text": "9876543210", "label": "PHONE" }
+    ]
+  },
+  {
+    "id": "gliner_019",
+    "category": "ambiguous",
+    "note": "AWS Access Key ID — looks like a random string but follows AKIA prefix pattern",
+    "text": "The deployment script uses AKIAIOSFODNN7EXAMPLE for S3 access.",
+    "entities": [
+      { "text": "AKIAIOSFODNN7EXAMPLE", "label": "API KEY" }
+    ]
+  },
+  {
+    "id": "gliner_020",
+    "category": "ambiguous",
+    "note": "Formatted card number (dashes) — GLiNER must recognise the spaced/dashed credit card form",
+    "text": "Refund will be processed to card 4532-0151-1283-0366 within 5 working days.",
+    "entities": [
+      { "text": "4532-0151-1283-0366", "label": "CREDIT CARD" }
+    ]
+  },
+  {
+    "id": "gliner_021",
+    "category": "negative",
+    "note": "Pure procedural banking text — no PII present",
+    "text": "The bank is closed on second and fourth Saturdays of each month.",
+    "entities": []
+  },
+  {
+    "id": "gliner_022",
+    "category": "negative",
+    "note": "Git commit SHA — long hex string that resembles an API key but is not one",
+    "text": "The deployment was rolled back at commit e3b0c44298fc1c149afbf4c8996fb92427ae41e4.",
+    "entities": []
+  },
+  {
+    "id": "gliner_023",
+    "category": "negative",
+    "note": "Version string — numeric sequence that superficially resembles a phone or account number",
+    "text": "System upgraded to version 2024.10.15 with patch level 3.",
+    "entities": []
+  },
+  {
+    "id": "gliner_024",
+    "category": "negative",
+    "note": "Invalid IP (octet > 255) — should not be flagged",
+    "text": "The configuration contained an invalid IP address 999.999.999.999.",
+    "entities": []
+  },
+  {
+    "id": "gliner_025",
+    "category": "negative",
+    "note": "Malformed JWT (missing third segment) — should not be flagged as a JWT",
+    "text": "Malformed token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIn0 was rejected.",
+    "entities": []
+  },
+  {
+    "id": "gliner_026",
+    "category": "negative",
+    "note": "Tracking/shipment reference — 12-digit number without any banking context should not be an account",
+    "text": "Your courier tracking number is 123456789012.",
+    "entities": []
+  },
+  {
+    "id": "gliner_027",
+    "category": "negative",
+    "note": "Generic word 'online' — should NOT be classified as a URL despite being on a URL-detection radar",
+    "text": "You can manage your preferences online through our portal.",
+    "entities": []
+  },
+  {
+    "id": "gliner_028",
+    "category": "negative",
+    "note": "PAN-like string where 4th character is not a valid PAN format letter",
+    "text": "The code ABCDE1234F was flagged but does not match PAN format rules.",
+    "entities": []
+  },
+  {
+    "id": "gliner_029",
+    "category": "mixed",
+    "note": "Dense multi-entity record — full customer profile in a support ticket",
+    "text": "Support ticket: Rahul Sharma (rahul@gmail.com, 9876543210) reports a failed transfer from account 123456789012. Server log shows request from 192.168.1.10. PAN on file: IKRPM7731M.",
+    "entities": [
+      { "text": "Rahul Sharma", "label": "NAME" },
+      { "text": "rahul@gmail.com", "label": "EMAIL" },
+      { "text": "9876543210", "label": "PHONE" },
+      { "text": "123456789012", "label": "BANK ACCOUNT NUMBER" },
+      { "text": "192.168.1.10", "label": "IP ADDRESS" },
+      { "text": "IKRPM7731M", "label": "PAN" }
+    ]
+  },
+  {
+    "id": "gliner_030",
+    "category": "mixed",
+    "note": "Security incident containing both a credential (API key) and an identity (name + email)",
+    "text": "Engineer Neha Kapoor (neha.kapoor@fintech.io) accidentally exposed API key sk-proj-1234567890abcdef1234567890 in a public Gist.",
+    "entities": [
+      { "text": "Neha Kapoor", "label": "NAME" },
+      { "text": "neha.kapoor@fintech.io", "label": "EMAIL" },
+      { "text": "sk-proj-1234567890abcdef1234567890", "label": "API KEY" }
+    ]
+  }
+]
