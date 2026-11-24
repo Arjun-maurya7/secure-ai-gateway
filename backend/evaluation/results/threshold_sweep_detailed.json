@@ -1,0 +1,1783 @@
+{
+  "metadata": {
+    "timestamp": "2026-11-23T15:03:40.503587+00:00",
+    "total_benchmark_samples": 30,
+    "thresholds_evaluated": [
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7
+    ],
+    "models_evaluated": [
+      "urchade/gliner_multi_pii-v1",
+      "knowledgator/gliner-pii-small-v1.0",
+      "gretelai/gretel-gliner-bi-small-v1.0"
+    ]
+  },
+  "records": [
+    {
+      "model_name": "urchade/gliner_multi_pii-v1",
+      "adapter": "default",
+      "threshold": 0.3,
+      "tp": 21,
+      "fp": 12,
+      "fn": 12,
+      "precision": 0.6364,
+      "recall": 0.6364,
+      "f1": 0.6364,
+      "expected_entities": 33,
+      "predicted_entities": 33,
+      "latency_ms": 120.27,
+      "per_type": {
+        "ACCOUNT": {
+          "expected": 4,
+          "predicted": 5,
+          "tp": 4,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.8889
+        },
+        "API_KEY": {
+          "expected": 4,
+          "predicted": 5,
+          "tp": 4,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.8889
+        },
+        "CARD": {
+          "expected": 2,
+          "predicted": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "EMAIL": {
+          "expected": 4,
+          "predicted": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "IP": {
+          "expected": 3,
+          "predicted": 3,
+          "tp": 2,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.6667,
+          "recall": 0.6667,
+          "f1": 0.6667
+        },
+        "JWT": {
+          "expected": 1,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "NAME": {
+          "expected": 6,
+          "predicted": 4,
+          "tp": 1,
+          "fp": 3,
+          "fn": 5,
+          "precision": 0.25,
+          "recall": 0.1667,
+          "f1": 0.2
+        },
+        "PAN": {
+          "expected": 3,
+          "predicted": 4,
+          "tp": 2,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.5,
+          "recall": 0.6667,
+          "f1": 0.5714
+        },
+        "PHONE": {
+          "expected": 4,
+          "predicted": 2,
+          "tp": 1,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1": 0.3333
+        },
+        "URL": {
+          "expected": 2,
+          "predicted": 4,
+          "tp": 1,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.25,
+          "recall": 0.5,
+          "f1": 0.3333
+        }
+      }
+    },
+    {
+      "model_name": "urchade/gliner_multi_pii-v1",
+      "adapter": "default",
+      "threshold": 0.4,
+      "tp": 21,
+      "fp": 9,
+      "fn": 12,
+      "precision": 0.7,
+      "recall": 0.6364,
+      "f1": 0.6667,
+      "expected_entities": 33,
+      "predicted_entities": 30,
+      "latency_ms": 120.27,
+      "per_type": {
+        "ACCOUNT": {
+          "expected": 4,
+          "predicted": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "API_KEY": {
+          "expected": 4,
+          "predicted": 5,
+          "tp": 4,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.8889
+        },
+        "CARD": {
+          "expected": 2,
+          "predicted": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "EMAIL": {
+          "expected": 4,
+          "predicted": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "IP": {
+          "expected": 3,
+          "predicted": 3,
+          "tp": 2,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.6667,
+          "recall": 0.6667,
+          "f1": 0.6667
+        },
+        "JWT": {
+          "expected": 1,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "NAME": {
+          "expected": 6,
+          "predicted": 3,
+          "tp": 1,
+          "fp": 2,
+          "fn": 5,
+          "precision": 0.3333,
+          "recall": 0.1667,
+          "f1": 0.2222
+        },
+        "PAN": {
+          "expected": 3,
+          "predicted": 4,
+          "tp": 2,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.5,
+          "recall": 0.6667,
+          "f1": 0.5714
+        },
+        "PHONE": {
+          "expected": 4,
+          "predicted": 2,
+          "tp": 1,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1": 0.3333
+        },
+        "URL": {
+          "expected": 2,
+          "predicted": 3,
+          "tp": 1,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.3333,
+          "recall": 0.5,
+          "f1": 0.4
+        }
+      }
+    },
+    {
+      "model_name": "urchade/gliner_multi_pii-v1",
+      "adapter": "default",
+      "threshold": 0.5,
+      "tp": 19,
+      "fp": 8,
+      "fn": 14,
+      "precision": 0.7037,
+      "recall": 0.5758,
+      "f1": 0.6333,
+      "expected_entities": 33,
+      "predicted_entities": 27,
+      "latency_ms": 120.27,
+      "per_type": {
+        "ACCOUNT": {
+          "expected": 4,
+          "predicted": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571
+        },
+        "API_KEY": {
+          "expected": 4,
+          "predicted": 5,
+          "tp": 4,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.8889
+        },
+        "CARD": {
+          "expected": 2,
+          "predicted": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667
+        },
+        "EMAIL": {
+          "expected": 4,
+          "predicted": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "IP": {
+          "expected": 3,
+          "predicted": 3,
+          "tp": 2,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.6667,
+          "recall": 0.6667,
+          "f1": 0.6667
+        },
+        "JWT": {
+          "expected": 1,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "NAME": {
+          "expected": 6,
+          "predicted": 2,
+          "tp": 1,
+          "fp": 1,
+          "fn": 5,
+          "precision": 0.5,
+          "recall": 0.1667,
+          "f1": 0.25
+        },
+        "PAN": {
+          "expected": 3,
+          "predicted": 4,
+          "tp": 2,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.5,
+          "recall": 0.6667,
+          "f1": 0.5714
+        },
+        "PHONE": {
+          "expected": 4,
+          "predicted": 2,
+          "tp": 1,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1": 0.3333
+        },
+        "URL": {
+          "expected": 2,
+          "predicted": 3,
+          "tp": 1,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.3333,
+          "recall": 0.5,
+          "f1": 0.4
+        }
+      }
+    },
+    {
+      "model_name": "urchade/gliner_multi_pii-v1",
+      "adapter": "default",
+      "threshold": 0.6,
+      "tp": 18,
+      "fp": 7,
+      "fn": 15,
+      "precision": 0.72,
+      "recall": 0.5455,
+      "f1": 0.6207,
+      "expected_entities": 33,
+      "predicted_entities": 25,
+      "latency_ms": 120.27,
+      "per_type": {
+        "ACCOUNT": {
+          "expected": 4,
+          "predicted": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571
+        },
+        "API_KEY": {
+          "expected": 4,
+          "predicted": 5,
+          "tp": 4,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.8889
+        },
+        "CARD": {
+          "expected": 2,
+          "predicted": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667
+        },
+        "EMAIL": {
+          "expected": 4,
+          "predicted": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "IP": {
+          "expected": 3,
+          "predicted": 2,
+          "tp": 1,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.5,
+          "recall": 0.3333,
+          "f1": 0.4
+        },
+        "JWT": {
+          "expected": 1,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "NAME": {
+          "expected": 6,
+          "predicted": 2,
+          "tp": 1,
+          "fp": 1,
+          "fn": 5,
+          "precision": 0.5,
+          "recall": 0.1667,
+          "f1": 0.25
+        },
+        "PAN": {
+          "expected": 3,
+          "predicted": 4,
+          "tp": 2,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.5,
+          "recall": 0.6667,
+          "f1": 0.5714
+        },
+        "PHONE": {
+          "expected": 4,
+          "predicted": 2,
+          "tp": 1,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1": 0.3333
+        },
+        "URL": {
+          "expected": 2,
+          "predicted": 2,
+          "tp": 1,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        }
+      }
+    },
+    {
+      "model_name": "urchade/gliner_multi_pii-v1",
+      "adapter": "default",
+      "threshold": 0.7,
+      "tp": 18,
+      "fp": 6,
+      "fn": 15,
+      "precision": 0.75,
+      "recall": 0.5455,
+      "f1": 0.6316,
+      "expected_entities": 33,
+      "predicted_entities": 24,
+      "latency_ms": 120.27,
+      "per_type": {
+        "ACCOUNT": {
+          "expected": 4,
+          "predicted": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571
+        },
+        "API_KEY": {
+          "expected": 4,
+          "predicted": 5,
+          "tp": 4,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.8889
+        },
+        "CARD": {
+          "expected": 2,
+          "predicted": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667
+        },
+        "EMAIL": {
+          "expected": 4,
+          "predicted": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "IP": {
+          "expected": 3,
+          "predicted": 2,
+          "tp": 1,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.5,
+          "recall": 0.3333,
+          "f1": 0.4
+        },
+        "JWT": {
+          "expected": 1,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "NAME": {
+          "expected": 6,
+          "predicted": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 5,
+          "precision": 1.0,
+          "recall": 0.1667,
+          "f1": 0.2857
+        },
+        "PAN": {
+          "expected": 3,
+          "predicted": 4,
+          "tp": 2,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.5,
+          "recall": 0.6667,
+          "f1": 0.5714
+        },
+        "PHONE": {
+          "expected": 4,
+          "predicted": 2,
+          "tp": 1,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1": 0.3333
+        },
+        "URL": {
+          "expected": 2,
+          "predicted": 2,
+          "tp": 1,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        }
+      }
+    },
+    {
+      "model_name": "knowledgator/gliner-pii-small-v1.0",
+      "adapter": "default",
+      "threshold": 0.3,
+      "tp": 18,
+      "fp": 31,
+      "fn": 15,
+      "precision": 0.3673,
+      "recall": 0.5455,
+      "f1": 0.439,
+      "expected_entities": 33,
+      "predicted_entities": 49,
+      "latency_ms": 94.37,
+      "per_type": {
+        "ACCOUNT": {
+          "expected": 4,
+          "predicted": 6,
+          "tp": 4,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.6667,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "API_KEY": {
+          "expected": 4,
+          "predicted": 4,
+          "tp": 2,
+          "fp": 2,
+          "fn": 2,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        },
+        "CARD": {
+          "expected": 2,
+          "predicted": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "EMAIL": {
+          "expected": 4,
+          "predicted": 2,
+          "tp": 0,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "IP": {
+          "expected": 3,
+          "predicted": 3,
+          "tp": 1,
+          "fp": 2,
+          "fn": 2,
+          "precision": 0.3333,
+          "recall": 0.3333,
+          "f1": 0.3333
+        },
+        "JWT": {
+          "expected": 1,
+          "predicted": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "NAME": {
+          "expected": 6,
+          "predicted": 14,
+          "tp": 6,
+          "fp": 8,
+          "fn": 0,
+          "precision": 0.4286,
+          "recall": 1.0,
+          "f1": 0.6
+        },
+        "PAN": {
+          "expected": 3,
+          "predicted": 4,
+          "tp": 3,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571
+        },
+        "PHONE": {
+          "expected": 4,
+          "predicted": 7,
+          "tp": 2,
+          "fp": 5,
+          "fn": 2,
+          "precision": 0.2857,
+          "recall": 0.5,
+          "f1": 0.3636
+        },
+        "URL": {
+          "expected": 2,
+          "predicted": 7,
+          "tp": 0,
+          "fp": 7,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "model_name": "knowledgator/gliner-pii-small-v1.0",
+      "adapter": "default",
+      "threshold": 0.4,
+      "tp": 16,
+      "fp": 25,
+      "fn": 17,
+      "precision": 0.3902,
+      "recall": 0.4848,
+      "f1": 0.4324,
+      "expected_entities": 33,
+      "predicted_entities": 41,
+      "latency_ms": 94.37,
+      "per_type": {
+        "ACCOUNT": {
+          "expected": 4,
+          "predicted": 6,
+          "tp": 4,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.6667,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "API_KEY": {
+          "expected": 4,
+          "predicted": 4,
+          "tp": 2,
+          "fp": 2,
+          "fn": 2,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        },
+        "CARD": {
+          "expected": 2,
+          "predicted": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "EMAIL": {
+          "expected": 4,
+          "predicted": 2,
+          "tp": 0,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "IP": {
+          "expected": 3,
+          "predicted": 3,
+          "tp": 1,
+          "fp": 2,
+          "fn": 2,
+          "precision": 0.3333,
+          "recall": 0.3333,
+          "f1": 0.3333
+        },
+        "JWT": {
+          "expected": 1,
+          "predicted": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "NAME": {
+          "expected": 6,
+          "predicted": 7,
+          "tp": 4,
+          "fp": 3,
+          "fn": 2,
+          "precision": 0.5714,
+          "recall": 0.6667,
+          "f1": 0.6154
+        },
+        "PAN": {
+          "expected": 3,
+          "predicted": 4,
+          "tp": 3,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571
+        },
+        "PHONE": {
+          "expected": 4,
+          "predicted": 6,
+          "tp": 2,
+          "fp": 4,
+          "fn": 2,
+          "precision": 0.3333,
+          "recall": 0.5,
+          "f1": 0.4
+        },
+        "URL": {
+          "expected": 2,
+          "predicted": 7,
+          "tp": 0,
+          "fp": 7,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "model_name": "knowledgator/gliner-pii-small-v1.0",
+      "adapter": "default",
+      "threshold": 0.5,
+      "tp": 15,
+      "fp": 14,
+      "fn": 18,
+      "precision": 0.5172,
+      "recall": 0.4545,
+      "f1": 0.4839,
+      "expected_entities": 33,
+      "predicted_entities": 29,
+      "latency_ms": 94.37,
+      "per_type": {
+        "ACCOUNT": {
+          "expected": 4,
+          "predicted": 6,
+          "tp": 4,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.6667,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "API_KEY": {
+          "expected": 4,
+          "predicted": 3,
+          "tp": 2,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.6667,
+          "recall": 0.5,
+          "f1": 0.5714
+        },
+        "CARD": {
+          "expected": 2,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "EMAIL": {
+          "expected": 4,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "IP": {
+          "expected": 3,
+          "predicted": 3,
+          "tp": 1,
+          "fp": 2,
+          "fn": 2,
+          "precision": 0.3333,
+          "recall": 0.3333,
+          "f1": 0.3333
+        },
+        "JWT": {
+          "expected": 1,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "NAME": {
+          "expected": 6,
+          "predicted": 4,
+          "tp": 3,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.75,
+          "recall": 0.5,
+          "f1": 0.6
+        },
+        "PAN": {
+          "expected": 3,
+          "predicted": 4,
+          "tp": 3,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571
+        },
+        "PHONE": {
+          "expected": 4,
+          "predicted": 6,
+          "tp": 2,
+          "fp": 4,
+          "fn": 2,
+          "precision": 0.3333,
+          "recall": 0.5,
+          "f1": 0.4
+        },
+        "URL": {
+          "expected": 2,
+          "predicted": 3,
+          "tp": 0,
+          "fp": 3,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "model_name": "knowledgator/gliner-pii-small-v1.0",
+      "adapter": "default",
+      "threshold": 0.6,
+      "tp": 11,
+      "fp": 5,
+      "fn": 22,
+      "precision": 0.6875,
+      "recall": 0.3333,
+      "f1": 0.449,
+      "expected_entities": 33,
+      "predicted_entities": 16,
+      "latency_ms": 94.37,
+      "per_type": {
+        "ACCOUNT": {
+          "expected": 4,
+          "predicted": 5,
+          "tp": 4,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.8889
+        },
+        "API_KEY": {
+          "expected": 4,
+          "predicted": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667
+        },
+        "CARD": {
+          "expected": 2,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "EMAIL": {
+          "expected": 4,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "IP": {
+          "expected": 3,
+          "predicted": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "JWT": {
+          "expected": 1,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "NAME": {
+          "expected": 6,
+          "predicted": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 5,
+          "precision": 1.0,
+          "recall": 0.1667,
+          "f1": 0.2857
+        },
+        "PAN": {
+          "expected": 3,
+          "predicted": 4,
+          "tp": 3,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571
+        },
+        "PHONE": {
+          "expected": 4,
+          "predicted": 3,
+          "tp": 1,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.3333,
+          "recall": 0.25,
+          "f1": 0.2857
+        },
+        "URL": {
+          "expected": 2,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "model_name": "knowledgator/gliner-pii-small-v1.0",
+      "adapter": "default",
+      "threshold": 0.7,
+      "tp": 6,
+      "fp": 0,
+      "fn": 27,
+      "precision": 1.0,
+      "recall": 0.1818,
+      "f1": 0.3077,
+      "expected_entities": 33,
+      "predicted_entities": 6,
+      "latency_ms": 94.37,
+      "per_type": {
+        "ACCOUNT": {
+          "expected": 4,
+          "predicted": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571
+        },
+        "API_KEY": {
+          "expected": 4,
+          "predicted": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667
+        },
+        "CARD": {
+          "expected": 2,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "EMAIL": {
+          "expected": 4,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "IP": {
+          "expected": 3,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "JWT": {
+          "expected": 1,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "NAME": {
+          "expected": 6,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "PAN": {
+          "expected": 3,
+          "predicted": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333,
+          "f1": 0.5
+        },
+        "PHONE": {
+          "expected": 4,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "URL": {
+          "expected": 2,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "model_name": "gretelai/gretel-gliner-bi-small-v1.0",
+      "adapter": "gretel",
+      "threshold": 0.3,
+      "tp": 17,
+      "fp": 5,
+      "fn": 16,
+      "precision": 0.7727,
+      "recall": 0.5152,
+      "f1": 0.6182,
+      "expected_entities": 33,
+      "predicted_entities": 22,
+      "latency_ms": 98.55,
+      "per_type": {
+        "ACCOUNT": {
+          "expected": 4,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "API_KEY": {
+          "expected": 4,
+          "predicted": 8,
+          "tp": 4,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6667
+        },
+        "CARD": {
+          "expected": 2,
+          "predicted": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "EMAIL": {
+          "expected": 4,
+          "predicted": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571
+        },
+        "IP": {
+          "expected": 3,
+          "predicted": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "JWT": {
+          "expected": 1,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "NAME": {
+          "expected": 6,
+          "predicted": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 5,
+          "precision": 1.0,
+          "recall": 0.1667,
+          "f1": 0.2857
+        },
+        "PAN": {
+          "expected": 3,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "PHONE": {
+          "expected": 4,
+          "predicted": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "URL": {
+          "expected": 2,
+          "predicted": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "model_name": "gretelai/gretel-gliner-bi-small-v1.0",
+      "adapter": "gretel",
+      "threshold": 0.4,
+      "tp": 17,
+      "fp": 5,
+      "fn": 16,
+      "precision": 0.7727,
+      "recall": 0.5152,
+      "f1": 0.6182,
+      "expected_entities": 33,
+      "predicted_entities": 22,
+      "latency_ms": 98.55,
+      "per_type": {
+        "ACCOUNT": {
+          "expected": 4,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "API_KEY": {
+          "expected": 4,
+          "predicted": 8,
+          "tp": 4,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6667
+        },
+        "CARD": {
+          "expected": 2,
+          "predicted": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "EMAIL": {
+          "expected": 4,
+          "predicted": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571
+        },
+        "IP": {
+          "expected": 3,
+          "predicted": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "JWT": {
+          "expected": 1,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "NAME": {
+          "expected": 6,
+          "predicted": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 5,
+          "precision": 1.0,
+          "recall": 0.1667,
+          "f1": 0.2857
+        },
+        "PAN": {
+          "expected": 3,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "PHONE": {
+          "expected": 4,
+          "predicted": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "URL": {
+          "expected": 2,
+          "predicted": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "model_name": "gretelai/gretel-gliner-bi-small-v1.0",
+      "adapter": "gretel",
+      "threshold": 0.5,
+      "tp": 17,
+      "fp": 5,
+      "fn": 16,
+      "precision": 0.7727,
+      "recall": 0.5152,
+      "f1": 0.6182,
+      "expected_entities": 33,
+      "predicted_entities": 22,
+      "latency_ms": 98.55,
+      "per_type": {
+        "ACCOUNT": {
+          "expected": 4,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "API_KEY": {
+          "expected": 4,
+          "predicted": 8,
+          "tp": 4,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6667
+        },
+        "CARD": {
+          "expected": 2,
+          "predicted": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "EMAIL": {
+          "expected": 4,
+          "predicted": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571
+        },
+        "IP": {
+          "expected": 3,
+          "predicted": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "JWT": {
+          "expected": 1,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "NAME": {
+          "expected": 6,
+          "predicted": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 5,
+          "precision": 1.0,
+          "recall": 0.1667,
+          "f1": 0.2857
+        },
+        "PAN": {
+          "expected": 3,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "PHONE": {
+          "expected": 4,
+          "predicted": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "URL": {
+          "expected": 2,
+          "predicted": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "model_name": "gretelai/gretel-gliner-bi-small-v1.0",
+      "adapter": "gretel",
+      "threshold": 0.6,
+      "tp": 17,
+      "fp": 4,
+      "fn": 16,
+      "precision": 0.8095,
+      "recall": 0.5152,
+      "f1": 0.6296,
+      "expected_entities": 33,
+      "predicted_entities": 21,
+      "latency_ms": 98.55,
+      "per_type": {
+        "ACCOUNT": {
+          "expected": 4,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "API_KEY": {
+          "expected": 4,
+          "predicted": 7,
+          "tp": 4,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.5714,
+          "recall": 1.0,
+          "f1": 0.7273
+        },
+        "CARD": {
+          "expected": 2,
+          "predicted": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "EMAIL": {
+          "expected": 4,
+          "predicted": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571
+        },
+        "IP": {
+          "expected": 3,
+          "predicted": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "JWT": {
+          "expected": 1,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "NAME": {
+          "expected": 6,
+          "predicted": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 5,
+          "precision": 1.0,
+          "recall": 0.1667,
+          "f1": 0.2857
+        },
+        "PAN": {
+          "expected": 3,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "PHONE": {
+          "expected": 4,
+          "predicted": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "URL": {
+          "expected": 2,
+          "predicted": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "model_name": "gretelai/gretel-gliner-bi-small-v1.0",
+      "adapter": "gretel",
+      "threshold": 0.7,
+      "tp": 16,
+      "fp": 4,
+      "fn": 17,
+      "precision": 0.8,
+      "recall": 0.4848,
+      "f1": 0.6038,
+      "expected_entities": 33,
+      "predicted_entities": 20,
+      "latency_ms": 98.55,
+      "per_type": {
+        "ACCOUNT": {
+          "expected": 4,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "API_KEY": {
+          "expected": 4,
+          "predicted": 6,
+          "tp": 3,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.5,
+          "recall": 0.75,
+          "f1": 0.6
+        },
+        "CARD": {
+          "expected": 2,
+          "predicted": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "EMAIL": {
+          "expected": 4,
+          "predicted": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571
+        },
+        "IP": {
+          "expected": 3,
+          "predicted": 3,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "JWT": {
+          "expected": 1,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "NAME": {
+          "expected": 6,
+          "predicted": 1,
+          "tp": 1,
+          "fp": 0,
+          "fn": 5,
+          "precision": 1.0,
+          "recall": 0.1667,
+          "f1": 0.2857
+        },
+        "PAN": {
+          "expected": 3,
+          "predicted": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "PHONE": {
+          "expected": 4,
+          "predicted": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "URL": {
+          "expected": 2,
+          "predicted": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    }
+  ],
+  "latency_summary": {
+    "urchade/gliner_multi_pii-v1": {
+      "load_time_s": 27.05,
+      "warmup_time_s": 7.6881,
+      "measured_time_s": 10.8247,
+      "timed_passes": 3,
+      "avg_latency_ms": 120.27
+    },
+    "knowledgator/gliner-pii-small-v1.0": {
+      "load_time_s": 5.89,
+      "warmup_time_s": 3.0813,
+      "measured_time_s": 8.4933,
+      "timed_passes": 3,
+      "avg_latency_ms": 94.37
+    },
+    "gretelai/gretel-gliner-bi-small-v1.0": {
+      "load_time_s": 12.29,
+      "warmup_time_s": 2.9268,
+      "measured_time_s": 8.8691,
+      "timed_passes": 3,
+      "avg_latency_ms": 98.55
+    }
+  }
+}
